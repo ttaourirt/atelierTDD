@@ -3,7 +3,9 @@ class TaskManager:
         self.tasks = []
         
     def parse(self, command):
-        return Action("add", command[2:])
+        if(command[0] == "+"):
+            return Action("add", command[2:])
+        
     
     
     

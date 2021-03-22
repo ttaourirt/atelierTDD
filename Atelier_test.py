@@ -6,8 +6,6 @@ def test_can_create_an_action():
     assert action.name == "add"
     assert action.description == "first task"
 
-
-
 def test_task_manager_starts_with_no_tasks():
     task_manager = TaskManager()
 
@@ -15,10 +13,20 @@ def test_task_manager_starts_with_no_tasks():
 
 
 def test_parse_add():
-    command = "+ first task"
+    command = " first task"
     task_manager = TaskManager()
 
     action = task_manager.parse(command)
 
     assert action.name == "add"
-    assert action.description == "first task"
+    
+
+    
+# def test_parse_remove():
+#     command = "- 1"
+#     task_manager = TaskManager()
+    
+#     action = task_manager.parse(command)
+    
+#     assert action.name == "remove"
+    
