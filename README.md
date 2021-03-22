@@ -10,5 +10,3 @@ python3 -m venv .venv
 # Run the tests:
 .venv/bin/pytest      # Linux, macOS
 .venv\Scripts\pytest  # Windows
-
-TDD Green prochain etape refactorer
