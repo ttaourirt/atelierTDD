@@ -29,4 +29,12 @@ def test_parse_remove():
     action = task_manager.parse(command)
     
     assert action.name == "remove"
-    
+
+
+def test_parse_done():
+    command = "x 1"
+    task_manager = TaskManager()
+
+    action = task_manager.parse(command)
+
+    assert action.name == "done"
