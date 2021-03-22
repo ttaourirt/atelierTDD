@@ -9,6 +9,8 @@ class TaskManager:
             return Action("remove", command[2:])
         elif(command[0] == "x"):
             return Action("done", command[2:])
+        elif(command[0] == "o"):
+            return Action("todo", command[2:])
     
     
     

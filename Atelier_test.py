@@ -38,3 +38,12 @@ def test_parse_done():
     action = task_manager.parse(command)
 
     assert action.name == "done"
+    
+
+def test_parse_todo():
+    command = "o 1"
+    task_manager = TaskManager()
+
+    action = task_manager.parse(command)
+
+    assert action.name == "todo"
