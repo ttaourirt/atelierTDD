@@ -5,7 +5,8 @@ class TaskManager:
     def parse(self, command):
         if(command[0] == "+"):
             return Action("add", command[2:])
-        
+        elif(command[0] == "-"):
+            return Action("remove", command[2:])
     
     
     
